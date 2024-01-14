@@ -22,6 +22,7 @@
 
 	<div class="container p-5">
 		<p class="text-center fs-3">Admin Dashboard</p>
+		
 		<c:if test="${not empty errorMsg}">
 			<p class="fs-3 text-center text-danger">${errorMsg}</p>
 			<c:remove var="errorMsg" scope="session" />
@@ -89,12 +90,12 @@
 	</div>
 
 	<!-- Modal -->
-	<!-- <div class="modal fade" id="exampleModal" tabindex="-1"
+	<div class="modal fade" id="exampleModal" tabindex="-1"
 		aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Add Specialist</h5>
 					<button type="button" class="btn-close" data-bs-dismiss="modal"
 						aria-label="Close"></button>
 				</div>
@@ -115,6 +116,6 @@
 				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 </body>
 </html>
