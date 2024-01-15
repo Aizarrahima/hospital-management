@@ -1,5 +1,5 @@
 <%@page import="com.db.DBConnect"%>
-<%-- <%@page import="com.dao.DoctorDao"%> --%>
+<%@page import="com.dao.DoctorDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -32,9 +32,9 @@
 			<c:remove var="succMsg" scope="session" />
 		</c:if>
 
-		<%-- <%
+		<%
 		DoctorDao dao = new DoctorDao(DBConnect.getConn());
-		%> --%>
+		%>
 
 		<div class="row">
 			<div class="col-md-4">
@@ -42,8 +42,7 @@
 					<div class="card-body text-center text-success">
 						<i class="fas fa-user-md fa-3x"></i><br>
 						<p class="fs-4 text-center">
-							Doctor <br>
-							<%-- <%=dao.countDoctor()%> --%>
+							Doctor <br> <%=dao.countDoctor()%>
 						</p>
 					</div>
 				</div>
@@ -54,8 +53,7 @@
 					<div class="card-body text-center text-success">
 						<i class="fas fa-user-circle fa-3x"></i><br>
 						<p class="fs-4 text-center">
-							User <br>
-							<%-- <%=dao.countUSer()%> --%>
+							User <br> <%=dao.countUSer()%>
 						</p>
 					</div>
 				</div>
@@ -66,8 +64,7 @@
 					<div class="card-body text-center text-success">
 						<i class="far fa-calendar-check fa-3x"></i><br>
 						<p class="fs-4 text-center">
-							Total Appointment <br>
-							<%-- <%=dao.countAppointment()%> --%>
+							Total Appointment <br> <%=dao.countAppointment()%>
 						</p>
 					</div>
 				</div>
@@ -80,8 +77,7 @@
 					<div class="card-body text-center text-success">
 						<i class="far fa-calendar-check fa-3x"></i><br>
 						<p class="fs-4 text-center">
-							Specialist <br>
-							<%-- <%=dao.countSpecialist()%> --%>
+							Specialist <br> <%=dao.countSpecialist()%>
 						</p>
 					</div>
 				</div>
